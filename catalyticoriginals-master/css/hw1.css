@@ -346,8 +346,8 @@ footer{
 }
 .topnav {
   overflow: hidden;
-  background-color:black;
-  border-radius: 10%;
+  background-color:rgb(188, 246, 253);
+  border-radius: 15%;
 }
 
 .topnav a {
@@ -367,7 +367,7 @@ footer{
 
 .topnav a.active {
   background-color: #33cbfd;
-  color: white;
+  color: black;
 }
 
 .topnav .icon {
