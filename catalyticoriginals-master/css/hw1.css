@@ -13,7 +13,7 @@ body{
     margin: 5px;
     padding :5px 15px;
     background:black;
-    background-image: url("backg2.jpg");
+    background-image: url("./backg1.jpg");
 
 }
 
@@ -26,6 +26,9 @@ header{
     height :200%; 
     padding-bottom: 5%;
     display: block;
+    border-radius: 15%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     
 
 }
@@ -290,7 +293,7 @@ footer{
 /*  Collab */
 #collab
 {
- margin-top: 10%;
+ margin-top: 5%;
  
 }
 
@@ -306,26 +309,31 @@ footer{
  margin-top: 10%;
  
 }
+.sub
+{
+  background-color: rgba(255,255,255,.5);
+  width:80px;
+  height: 30px;
+  font-size: 90%;
+  float:right;
+  margin-left: 1%;
+  border-radius: 20%;
+}
 .subtext
 {
    background: rgba(253, 253, 253, 0.5);
-   max-width:80px;
-   font-size: 20%; 
+   width:100px;
+   height: 20px;
+   font-size: 70%; 
+   float :right;
+   border-radius: 20%;
 }
 ::placeholder
 {
   opacity: 1;
-  color:white;
+  color:black;
 }
-.sub
-{
-  background-color: rgba(255,255,255,.5);
-  max-width:50px;
-  font-size: 20%;
-  
-  
-  border-radius: 20%;
-}
+
 .submit:hover
 {
   background-color:white;
@@ -335,19 +343,12 @@ footer{
 {
   display:none;
 }
-.dropbtn
-{
-  display:none;
-}
 
-.dropdown-content
-{
-  display: none;
-}
 .topnav {
   overflow: hidden;
-  background-color:rgb(188, 246, 253);
+  background-color:rgb(116, 248, 134);
   border-radius: 15%;
+  color :black;
 }
 
 .topnav a {
@@ -366,7 +367,7 @@ footer{
 }
 
 .topnav a.active {
-  background-color: #33cbfd;
+  background-color: white;
   color: black;
 }
 
@@ -402,11 +403,32 @@ footer{
     display: block;
     text-align: left;
   }
+  
+  
 }
 
 /*-----------------------------------------------------------------*/
 @media (max-width: 880px)
 {
+  .subtext
+  {
+    font-size: 40%;
+    height: 10px;
+    width:50px;
+    margin-top: 5%;
+  }
+  .sub
+  {
+    font-size: 40%;
+    height: 15px;
+    width:50px;
+    margin-top: 5%;
+  }
+  header
+  {
+    margin-top: 25%;
+    
+  }
   .topnav
   {
     display: block;
@@ -547,6 +569,11 @@ footer{
 {
  margin-top: 10%;
  
+}
+header
+{
+  background-image: url("./mobile\ view.jpg");
+
 }
 
 /*  Guitar */
