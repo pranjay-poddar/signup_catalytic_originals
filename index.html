@@ -1,72 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-   <head>
-        <title>Sign Up Form</title>
-        <link rel="stylesheet" type="text/css" href="form.css">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-  
-    </head>
-   <body>
-       <div class="container">
-       <center><h2 id="title" class="text-center">SIGNUP FORM</h2></center>
-       <header class="header">
-           
-           <center>
-               <a href="https://pranjay-poddar.github.io/catalytic_originals/" id ="des" class="desc" style="font-size: 110%;">Catalytic Originals</a>
-           </center>
-           <br>
-           <center>
-               <img src="./logo/cato.png" alt="an image" height ="100px" weight="100px">
-           </center>
-       </header>
-       <form id="survey-form" name="form1">
-           <br>
-           <div class="form-group">
-               <label id="name-label" for="Name">Username</label>
-               <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required>
-           </div>
-           <br>
-           <div class="form-group">
-            <label id="email-label" for="Email">Email</label>
-            <input type="text" name="email" id="email" class="form-control" placeholder="Enter Your Email" required>
-           </div>
-           <br>
-           <div class="form-group">
-            <label id="dob-label" for="dob">DOB</label>
-            <input type="date" name="dob" id="dob" class="form-control" placeholder="DOB" required>
-           </div>
-           <br>
-           <div class="form-group">
-            <p> Please select your gender</p>
-            <label for="male"><input type="radio" id="male" name="gender" value="male" class="input-radio" checked>Male</label>
-            <label for="female"><input type="radio" id="female" name="gender" value="female" class="input-radio">Female</label>
-            <label for="other"><input type="radio" id="other" name="gender" value="other" class="input-radio">Other</label>
-        </div>
-        <br>
-        <div class="form-group">
-            <label id="password-label" for="password">Password</label>
-            <input type="password" name="password1" id="password1" class="form-control" placeholder="Enter Password" required>
-           </div>
-           <br>
-           <div class="form-group">
-            <label id="password-label" for="password">Confirm Password</label>
-            <input type="password" name="password2" id="password2" class="form-control" placeholder="Enter Password" required>
-           </div>
-        
-    <br>
-    <br>
-    <div class="form-group sub">
-        <center>
-        <button type="submit" id="submit" class="submit-button" 
-        onclick="checkfun(document.form1)">Submit</button>
-    </center>
-    </div>
-    </div>
-<br>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<script src="catalytic.js"></script>
+	
+	<title>Catalytic Originals</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+ 
+	<link rel="stylesheet" href="css/hw1.css">
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="#home" class="active">Home</a>
+		<a href="#collab">Collabs</a>
+		<a href="#guitar">Mashups</a>
+		<a href="#vlogs">Vlogs</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		  <i class="fa fa-bars"></i>
+		</a>
+	  </div>
+	<form  onsubmit ="greet();return false;">
+		<input  type="submit" class="sub">
+		<input type="text" id="name" class= "subtext" placeholder="Type Your Name">
+		
+		
+	</form>
+            
+       
+	<header>
+		<br><br><br>
+		<h1>Catalytic Originals</h1>
+		<br>
+		<nav >
+			<a href="#home" class = "active">Home</a>
+			<a href="#collab">Collabs</a>
+			<a href="#guitar">Mashups</a>
+			<a href="#vlogs">Vlogs</a>
+			
+		</nav>
+	
+		
+		
+	</header>
+		<main>
+			<section class= "left" id="leftg">
+			<aside class = "left">
+				<h2>GALLERY</h2>
 
-   </body>
-   <script src="form.js">
-</script>
+			<a href="https://www.youtube.com/watch?v=Yh-0be1li8A&t=2s"><img src="images/lemonade.jpg" alt="The lemonade story" title="The lemonade story"/> </a>
+
+			<a href="https://www.youtube.com/watch?v=Ljbf_lbCZ9U"><img alt="" src="images/guitar.jpg"/></a>
+
+
+			<a href="https://www.youtube.com/watch?v=zzKDajD1dCw" title="Travel Vlogs"><img src="images/srm.jpg"  alt="Travel Vlogs"></a>
+			<a href="https://www.youtube.com/watch?v=lAFD09VCTDY" title="Cover Page"><img src="images/co.jpg"  alt="Cover Page"></a>
+			<a href="https://www.youtube.com/watch?v=ctpTFPLQ55I" title="Srm University induction"><img src="images/srm2.jpg"  alt="Srm University Induction"></a>
+			<a href="https://www.youtube.com/watch?v=AEMugjTDoTY" title="Educational Series"><img src="images/educational.jpg"  alt="Educational Series"></a>
+
+<!--------------------------------------------------------------------------------------------------------->
+			<div id = "imageshide">
+            <a href="https://www.youtube.com/watch?v=Yh-0be1li8A&t=2s"><img src="images/lemonade.jpg" alt="The lemonade story" title="The lemonade story"/> </a>
+
+			<a href="https://www.youtube.com/watch?v=Ljbf_lbCZ9U"><img alt="" src="images/guitar.jpg"/></a>
+
+
+			<a href="https://www.youtube.com/watch?v=zzKDajD1dCw" title="Travel Vlogs"><img src="images/srm.jpg"  alt="Travel Vlogs"></a>
+			<a href="https://www.youtube.com/watch?v=lAFD09VCTDY" title="Cover Page"><img src="images/co.jpg"  alt="Cover Page"></a>
+			<a href="https://www.youtube.com/watch?v=ctpTFPLQ55I" title="Srm University induction"><img src="./css/943.jpg"  alt="Srm University Induction"></a>
+			<a href="https://www.youtube.com/watch?v=AEMugjTDoTY" title="Educational Series"><img src="images/educational.jpg"  alt="Educational Series"></a>
+			<a href="https://www.youtube.com/watch?v=AEMugjTDoTY" title="Educational Series"><img src="./css/co2.jpg"  alt="Educational Series"></a>
+			<a href="https://www.youtube.com/watch?v=Yh-0be1li8A&t=2s"><img src="images/lemonade.jpg" alt="The lemonade story" title="The lemonade story"/> </a>
+		</div>
+		</aside>
+			</section>
+
+			<section class = "right" id="home">
+				<h2>ABOUT</h2>
+			<p>Catalytic Originals is a creative channel/brand owned and managed by Pranjay Poddar. This channel's content includes - instrumental guitar covers, music covers, animations, SRM Chennai KTR main campus college videos, travel vlogs, and educational series for engineering students.</p>
+
+
+<p>---Do hit the subscribe button and press the bell icon on youtube for regular updates...  :)</p>
+
+<p>---Share the videos to spread creativity and love... ;)</p>
+
+<p>---For Collabs contact through the links given below. </p>
+
+
+<p>**All the content in this channel/website is a product of creativity and one's own thoughts.</p>
+<p>**Plagiarism in any form is not entertained.</p>
+		    
+	</section>
+
+
+
+
+
+	<!---Collab  ------------------------------------------------------------------------------------------------------------>
+<br><br><br><br><br>
+<section id = "collab" class = "right">
+	<h2>Music And Educational Series Collabs</h2>
+	<table>
+		<tr><th>Music Video Content</th>
+			<th>Links</th>
+		</tr>
+		
+			  <tr>
+							<td>The Lemonade Story | Revoic - JANE JA | Ft. Neha Arora</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=Yh-0be1li8A">Click To View</a></button></td>
+			  </tr>
+	</table>
+	<table> 
+			  <tr><th> Education Series</th>
+			<th>Links</th>
+						 
+						 <tr>
+							<td>Dabbling in Analytic Functions | Teaser</td>
+							<td ><button id= "click"><a href="https://www.youtube.com/watch?v=AEMugjTDoTY">Click To View</a></button></td>
+						</tr>
+						<tr>
+							<td>Analytic Functions | Part-1</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=5CmTpekbfFE">Click To View</a></button></td>
+						</tr>
+						<tr>
+							<td>Analytic Functions | Part-2</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=l77rGZkBlnU">Click To View</a></button></td>
+						</tr>
+						<tr>
+							<td>Analytic Functions | Part-3</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=TWYPjYig3FI&t=146s">Click To View</a></button></td>
+						</tr>
+	</table>
+	<table>
+	<tr><th>Webarch Club</th>
+			<th>Links</th>
+		</tr>
+			  <tr>
+							<td>Virtual Farewell Of Architects Of Web -Webarch Club Srm Batch 2020 </td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=xpPVVNeRUQk">Click To View</a></button></td>
+						</tr>
+		
+	</table>
+</section>
+
+
+
+
+
+<!--------Guitar ------------------------------------------------------------------------------------------------------->
+
+<section class = "right" id="guitar">
+	<h2>Guitar Mashups And Solos</h2>
+	
+	<table>
+		<tr><th>Guitar Mashups</th>
+			<th>Links</th>
+		</tr>
+		<tr>
+							<td>Pubg Intro Guitar</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=gATl2mf94HQ">Click To View</a></button></td>
+		 </tr>
+						<tr>
+							<td>Pirates Of The Caribbean Vs Titanic</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=QxdrJ8tHzcE">Click To View</a></button></td>
+						</tr>
+	</table>
+	<table>
+			  <tr><th> Guitar Solos</th>
+			<th>Links</th>
+						 
+						 <tr>
+							<td>Gratitude Guitar Tabs</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=Ljbf_lbCZ9U">Click To View</a></button></td>
+						</tr>
+						<tr>
+							<td>Jana Gana Mana</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=inCSOCOSgXc">Click To View</a></button></td>
+						</tr>
+						<tr>
+							<td>Jingle Bells</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=EqWUGlw9mWI">Click To View</a></button></td>
+						</tr>
+		
+		
+	</table>
+</section>
+
+<!---------Vlogs  -------------------------------------------------------------------------------------------------->
+<section class = "right" id ="vlogs">
+	<h2>Vlogs</h2>
+	
+	<table>
+		
+			  <tr><th>Vlogs</th>
+			<th>Links</th>
+						 
+						 <tr>
+							<td>Travel Vlog Chennai | Vlog-1</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=BMhrWr6ZJRY">Click To View</a></button></td>
+						</tr>
+						<tr>
+							<td>First Year Sum Up | Vlog-2</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=zzKDajD1dCw&pbjreload=101">Click To View</a></button></td>
+						</tr>
+						<tr>
+							<td> Survey Report By First Year Students</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=9HE0aFaFwe8">Click To View</a></button></td>
+						</tr>
+						<tr>
+							<td>Freshers' Induction Overview</td>
+							<td><button id= "click"><a href="https://www.youtube.com/watch?v=ctpTFPLQ55I">Click To View</a></button></td>
+						</tr>
+		
+		
+	</table>
+</section>
+
+
+
+
+
+
+
+</main>
+</body>
+<footer>
+	<section class="social">
+		<h2> Contact Us</h2>
+                <a href="https://twitter.com/PranjayPoddar" target="_blank"><img class="social-icons" src="./icons/twitter.png" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/PRJ834/" target="_blank"><img class="social-icons" src="./icons/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/catalytic_originals/" target="_blank"><img class="social-icons" src="./icons/instagram.png" alt="instagram icon"></a>
+                <a href="https://www.linkedin.com/in/pranjay-poddar/" target="_blank"><img class="social-icons" src="./icons/linkedin.png" alt="linkedin icon"></a>
+               <a href="https://www.behance.net/pranjaypoddar" target="_blank"><img class="social-icons" src="./icons/behance.png" alt="behance icon"></a>
+                <a href="https://github.com/pranjay-poddar" target="_blank"><img class="social-icons" src="./icons/github.png" alt="github icon"></a>
+			  </section>
+			  <br>
+              <section class="credit">
+		<span id = "credits"></span>Made with <span id= "heart"> &#60 3 </span> By <a href="https://pranjay-poddar.github.io/portfolio/index.html" id ="creditlink" style="color:aqua ;text-decoration: none;">Pranjay Poddar</a></span>
+		
+		</section><br>
+	</footer>
 </html>
