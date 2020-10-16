@@ -4,11 +4,11 @@ This is the official Signup website of catalytic originals!
 
 https://pranjay-poddar.github.io/signup_catalytic_originals/
 <p align="center">
-  <img src="cato.png" width="350" title="hover text">
+  <img src="./logo/cato.png" width="350" title="hover text">
   </p >
   <br>
   <p align="center">
-  <img src="./images/website-signup.png" width="600" alt="accessibility text">
+  <img src="./logo/website-signup.png" width="600" alt="accessibility text">
   </p>
   <br>
   <p align="center">
